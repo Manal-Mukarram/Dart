@@ -19,4 +19,13 @@ void main() {
   } else {
     print('Invalid username or password..');
   }
+
+  // ternary operator
+  // condition ? value_if_true : value_if_false
+  var number1 = 5;
+  var number2 = 7;
+  var ternaryOp = number1 > number2
+      ? '$number1 is greater than $number2'
+      : '$number1 is lesser than $number2';
+  print(ternaryOp);
 }
