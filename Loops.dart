@@ -24,7 +24,7 @@ void main() {
       print('Welcome, Admin');
       break;
     } else {
-      print('Incorrect Password');
+      print('Incorrect Password. Retype it.');
       enterPassword = stdin.readLineSync();
     }
   }
