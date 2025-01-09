@@ -17,8 +17,10 @@ Create two car objects with different details.
 Call the displayDetails method for both objects.
 */
 void main() {
-  Cars cars = Cars("abc", "xyz", 2003);
-  print(cars.year);
+  Cars cars1 = Cars("abc", "xyz", 2003);
+  cars1.displayDetails();
+  Cars cars2 = Cars('def', 'pqr', 2001);
+  cars2.displayDetails();
 }
 
 class Cars {
@@ -26,4 +28,7 @@ class Cars {
   String model;
   int year;
   Cars(this.brand, this.model, this.year);
+  void displayDetails() {
+    print('The car is $brand $model $year.');
+  }
 }
