@@ -24,6 +24,15 @@ void main() {
 Create a list named scores with the values [45, 78, 23, 56, 89, 12].
 Write code to find and print the largest number in the list.
 */
+  print("Exercise 2");
+  List scores = [45, 78, 23, 56, 89, 12];
+  var largestNumber = scores[0];
+  for (int i = 0; i < scores.length; i++) {
+    if (scores[i] > largestNumber) {
+      largestNumber = scores[i];
+    }
+  }
+  print('The largest score is $largestNumber.');
 }
 
 class Fruits {
