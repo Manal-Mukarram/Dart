@@ -15,7 +15,8 @@ Test the function by passing each value of the enum.
 enum TrafficLights { red, yellow, green }
 
 void main() {
-  TrafficLights lights = TrafficLights.red;
+  TrafficLights lights =
+      TrafficLights.red; // Strings cant be assigned to TrafficLights
   switch (lights) {
     case TrafficLights.red:
       print('STOP');
